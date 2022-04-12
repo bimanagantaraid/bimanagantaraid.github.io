@@ -1,0 +1,26 @@
+<body>
+  <h1>Hi cantik...</h1>
+  <iframe
+    src="https://giphy.com/embed/M90mJvfWfd5mbUuULX"
+    width="200"
+    height="200"
+    frameborder="0"
+    class="giphy-embed"
+    allowfullscreen
+  ></iframe>
+  <h2>Mau jadi pacar aku ngak?</h2>
+  <button onclick="alert('i love you')">Ya mau :)</button>
+  <button class="ngakmau" style="position: absolute">Ngak mau!</button>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(".ngakmau").on("mouseover", function () {
+    $(this).animate(
+      {
+        top: Math.random() * window.innerHeight + "px",
+        left: Math.random() * window.innerHeight + "px",
+      },
+      "medium"
+    );
+  });
+</script>
